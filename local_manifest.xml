@@ -31,7 +31,7 @@
     <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" revision="cm-11.0" remote="THLG"/>
 
     <project path="vendor/lge" name="proprietary_vendor_lge" revision="cm-11.0" remote="THLG"/>
-    <project path="device/lge/e610" name="android_device_lge_e610" revision="cm-11.0" remote="CR"/>
+    <project path="device/lge/e610" name="android_device_lge_e610" revision="cm-11.0" remote="THLG"/>
 	<project path="device/lge/p700" name="android_device_lge_p700" revision="cm-11.0" remote="CR"/>
 
     <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="CR"/>
@@ -51,6 +51,17 @@
 
     <remove-project name="CyanogenMod/android_frameworks_native" />
     <project path="frameworks/native" name="android_frameworks_native" revision="cm-11.0" remote="CR"/>
+	
+	<!-- webkit classic test -->
+    <remove-project name="CyanogenMod/android_frameworks_webview" />
+    <remove-project name="CyanogenMod/android_external_chromium_org"/>
+    <project path="external/chromium_org" name="android_external_chromium_org" revision="cm-11.0" remote="cr3pt"/>
+    <project path="external/webkit" name="android_external_webkit" revision="cm-11.0" remote="cr3pt"/>
+	
+	<!-- sound recorder -->
+    <remove-project name="CyanogenMod/android_packages_apps_SoundRecorder" />
+    <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" revision="cm-11.0" remote="cr3pt"/>
+
 </manifest>
 
 
